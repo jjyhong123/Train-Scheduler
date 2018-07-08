@@ -1,0 +1,30 @@
+body {
+    font-size: 16px;
+}
+
+.card {
+    margin-bottom: 35px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+}
+
+.jumbotron {
+    color: black;
+    height: 300px;
+    background-image: url("../images/train.jpg");
+    background-position: 0% 60%;
+    padding-top: 20px;
+    padding-left: 200px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.card-header {
+    color: white;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
