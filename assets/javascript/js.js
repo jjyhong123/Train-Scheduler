@@ -32,9 +32,6 @@ $(".btn").on("click", function (event) {
     // Uploads employee data to the database
     database.ref().push(trainData);
 
-    // Alert
-    alert("Employee successfully added");
-
     // Clears all of the text-boxes
     $("#train-name-input").val("");
     $("#destination-input").val("");
@@ -47,7 +44,7 @@ database.ref().on("child_added", function (childSnapshot) {
 
     console.log(childSnapshot.val());
 
-    // Store everything into a variable.
+    // Store everything into a variable
     var trainName = childSnapshot.val().trainName;
     var destination = childSnapshot.val().destination;
     var firstTrainTime = childSnapshot.val().firstTrainTime;
